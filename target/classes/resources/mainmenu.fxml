@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.Button?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" styleClass="border-pane"
+    fx:id="root" fx:controller="application.MainMenuController">
+
+    <center>
+        <VBox fx:id="boxInput" alignment="center">
+            <children>
+                <Button fx:id="btn1" text="Login" onAction="#openLoginForm" />
+                <Button fx:id="btn2" text="Add User" onAction="#openAddUser" />
+                <Button fx:id="btn3" text="Create Patient Account" onAction="#createPatientAccount" />
+                <Button fx:id="btn4" text="Create Doctor Account" onAction="#createDoctorAccount" />
+                <Button fx:id="btn5" text="Forgot Password" onAction="#resetPassword" />
+            </children>
+        </VBox>
+    </center>
+
+</BorderPane>
+
+
